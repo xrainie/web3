@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Второе задание</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img class="page-logo" src="logo.png" alt="Лого" />
+        <a href="#top">Мой сайт | Второе задание</a>
+      </div>
+    </header>
+    <nav class="page-nav">
+      <ul>
+        <li><a href="#list">Список ссылок</a></li>
+        <li><a href="#form">Форма</a></li>
+        <li><a href="#page-table">Таблица</a></li>
+      </ul>
+    </nav>
+    <section class="list" id="list">
+      <div style="padding: 0; border:none; background-color:#cfdaec;">
+        <h2 class="page-content-bottom">Нумерованный список гиперссылок</h2>
+        <div class="page-content">
+          <ol>
+            <li>
+              <a href="http://example.com"
+                >Абсолютная гиперссылка на главную страницу сайта example.com;</a
+              >
+            </li>
+            <li>
+              <a href="https://example.com"
+                >Абсолютная гиперссылка на главную страницу сайта example.com в
+                протоколе https;</a
+              >
+            </li>
+            <li>
+              <a href="ftp://server/objects.file.html"
+                >Ссылка на файл на сервере FTP без авторизации</a
+              >
+            </li>
+            <li>
+              <a href="ftp://user:6856@server/objects.file.html"
+                >Ссылка на файл на сервере FTP с авторизацией</a
+              >
+            </li>
+            <li>
+              <a href="https://www.google.com/doodles"
+                >Ссылка на раздел сайта google.com</a
+              >
+            </li>
+            <li><a href="#top">Ссылка на фрагмент текущей страницы</a></li>
+            <li>
+              <a href="https://google.com?par1=1&par2=p2"
+                >Ссылка с двумя параметрами URL</a
+              >
+            </li>
+            <li>
+              Список ссылок с основной навигации сайта с подписями title
+              <ul>
+                <li><a href="#list">Список гиперссылок</a></li>
+                <li><a href="#form">Форма</a></li>
+              </ul>
+            </li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li>
+              <a href="https://google.com" rel="nofollow"
+                >Ссылка под запретом перехода поисковикам</a
+              >
+            </li>
+            <li>
+              <a href="https://google.com" rel="nofollow"
+                >Неиндексируемая ссылка</a
+              >
+            </li>
+            <li>
+              <p>Контекстная <a href="#top">Ссылка</a> в тексте абзаца</p>
+            </li>
+            <li>
+              Ссылка - изображение
+              <br />
+              <a href="https://google.com"
+                ><img
+                  src="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1"
+                  alt="Описание"
+                  height="150"
+                  width="150"
+              /></a>
+            </li>
+            <li>
+              Карта навигации (google, yandex, mail)
+              <br />
+              <img
+                src="https://nz4.ru/wp-content/uploads/2014/12/poiskovie-500x300.jpg"
+                alt="Карта навигации"
+                width="500"
+                height="400"
+                usemap="#map"
+              />
+              <p>
+                <map name="map"
+                  ><area
+                    shape="rect"
+                    coords="0,0,200,100"
+                    href="https://google.com"
+                    alt="google"
+                  />
+                  <area
+                    shape="rect"
+                    coords="100,150,280,250"
+                    href="https://yandex.ru"
+                    alt="yandex"
+                  />
+                  <area
+                    shape="circle"
+                    coords="150,350,100"
+                    href="https://mail.ru"
+                    alt="mail"
+                  />
+                </map>
+              </p>
+            </li>
+            <li>
+              <a href="Страница"
+                >Относительная Ссылка на страницу в текущем каталоге</a
+              >
+            </li>
+            <li>
+              <a href="./about/Страница"
+                >Относительная cсылка на страницу в каталоге about</a
+              >
+            </li>
+            <li>
+              <a href="../Страница"
+                >Относительная ссылка на страницу в каталоге выше</a
+              >
+            </li>
+            <li>
+              <a href="../../Страница"
+                >Относительная ссылка на страницу в каталоге двумя уровнями выше
+                текущего</a
+              >
+            </li>
+            <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+            <li>
+              <a href="Страницы/страница"
+                >Сокращенная ссылка на внутреннюю страницу</a
+              >
+            </li>
+          </ol>
+        </div>
+            </section>
+      </div>
+    <div style="padding: 0; border:none; background-color:#cfdaec;">
+      <h2 class="page-content-bottom">Таблица</h2>
+      <div class="page-table" id="page-table">
+        <table>
+          <caption>
+            Caption
+          </caption>
+          <tr>
+            <th>Заголовок 1</th>
+            <th>Заголовок 2</th>
+            <th>Заголовок 3</th>
+          </tr>
+          <tr>
+            <td colspan="3">Объединенные ячейки</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Значение 1</td>
+            <td>Значение 2</td>
+            <td>Значение 3</td>
+          </tr>
+          <tr>
+            <td colspan="2">Объед. ячейки</td>
+          </tr>
+          <tr>
+            <td>Значение 1</td>
+            <td>Значение 2</td>
+            <td>Значение 3</td>
+          </tr>
+          <tr>
+            <td>Значение 1</td>
+            <td>Значение 2</td>
+            <td>Значение 3</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div style="padding: 0; border:none; background-color:#cfdaec;">
+      <h2 class="page-content-bottom">Форма</h2>
+      <div class="form" id="form">
+        <form action="/" method="post">
+          <label>
+            Текстовое поле
+            <br />
+            <input name="field-name" type="text" placeholder="Введите ваше имя" />
+          </label>
+          <br />
+          <label
+            >Текстовое поле e-mail <br /><input
+              name="field-email"
+              type="email"
+              placeholder="Введите вашу почту"
+          /></label>
+          <br />
+          <label> Поле даты<br /><input type="date" name="field-date" /> </label>
+          <br />
+          <label>
+            Ваш пол:
+            <br />
+            <input
+              type="radio"
+              name="radio-group-1"
+              value="Значение 1"
+              checked="checked"
+            />Мужской
+          </label>
+          <label>
+            <input type="radio" name="radio-group-1" value="Значение 2" />Женский
+          </label>
+          <br />
+          <label>
+            Количество конечностей :
+            <br />
+            <input type="radio" name="radio-group-2" value="Значение 1" /> 2
+          </label>
+          <label>
+            <input type="radio" name="radio-group-2" value="Значение 2" /> 3
+          </label>
+          <label
+            ><input type="radio" name="radio-group-2" value="Значение 3" />
+            4</label
+          >
+          <br />
+          <label>
+            Сверхспособности:
+            <br />
+            <select name="field-name[]" multiple="multiple" size="3">
+              <option value="Значение 1">Бессмертие</option>
+              <option value="Значение 2">Прохождение сквозь стены</option>
+              <option value="Значение 3">Левитация</option>
+            </select>
+          </label>
+          <br />
+          <label>
+            Пространство текста:
+            <br />
+            <textarea
+              name="field-area"
+              id="field-area"
+              cols="30"
+              rows="10"
+              placeholder="Текстовое поле"
+            ></textarea>
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="check-1" /> С контрактом ознакомлен (а)
+            (чекбокс)
+          </label>
+          <br />
+          <input type="submit" value="Отправить" />
+        </form>
+      </div>
+    </div>
+    <footer>(c)Соболев Владислав Викторович 2022</footer>
+  </body>
+</html>
